@@ -19,3 +19,14 @@ h1{
     right: 40px;
 }
 
+p{
+    text-shadow: 10px 2px 5px white;
+    position: absolute;
+    top:40%;
+    left:40%;
+    font-size: 45px;
+    
+}
+p:hover{
+    font-size: 100px;
+}
