@@ -31,5 +31,6 @@ p:hover{
     font-size: 100px;
 }
 
-/*.dragon{*/
-/*}*/
+.dragon{
+    float: right;
+}
