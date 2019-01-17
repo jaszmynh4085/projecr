@@ -1,18 +1,21 @@
 body{
-    height:300px;
-    width: 800px;
+    /*height:300px;*/
+    /*width: 800px;*/
     background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1));
 }
 
 h1{
     text-align: center;
     text-shadow: 10px 2px 5px white;
-    font-size: 50px 
+    font-size: 100 
 }
 
 .something{
-    height:100px;
-    background-color:black;
+    height:50%;
+    width:100%;
+    background-color: black;
     position: relative;
-    top:100%;
+    top:50%;
+    right: 40px;
 }
+
