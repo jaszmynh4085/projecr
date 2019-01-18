@@ -92,7 +92,7 @@ p:hover {
         opacity: 0
     }
     100% {
-        opacity: .60
+        opacity: .50
     }
 }
 @keyframes egg{
