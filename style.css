@@ -5,7 +5,8 @@ body {
 h1 {
     text-align: center;
     text-shadow: 10px 2px 5px white;
-    font-size: 100
+    font-size: 100;
+    color: rgb(50, 50, 50);
 }
 
 .something {
@@ -18,13 +19,19 @@ h1 {
 }
 
 p {
-    text-shadow: 10px 2px 5px white;
+    text-shadow: 10px 10px 5px white;
     position: absolute;
     top: 40%;
     left: 40%;
     font-size: 45px;
     color: rgb(50, 50, 50);
 
+}
+
+span {
+    opacity: .69;
+    color: rgb(158, 195, 255);
+    text-shadow: 10px 10px 5px lightblue;
 }
 
 p:hover {
@@ -38,14 +45,72 @@ p:hover {
     width: 500px;
     height: 500px;
     opacity: 0;
-     animation: flicker 3s ease-out 10s infinite alternate;
+    animation: flicker 3s ease-out 5s 2 alternate;
 
 }
 
-@keyframes flicker { /*for the dragon*/
-    0% {opacity: 0;}
-    25% {opacity:.0;}
-    50% {opacity:.20;}
-    75% {opacity:0}
-    100% {opacity:.60}
+.egg{
+    position: absolute;
+    animation: egg 3s ease-out 5s 2 alternate;
+
+}
+/*colors=diff eggs*/
+.white{
+    opacity:.01;
+    bottom: 109px;
+    right: 280px;
+    transform: rotate(80deg);
+
+}
+
+.green{
+    opacity: .02;
+    bottom: 120px;
+    right: 340px;
+    transform: rotate(20deg);
+}
+.red{
+    opacity: .07;
+    bottom: 120px;
+    right: 400px;
+    transform: rotate(5deg);
+}
+
+
+@keyframes flicker {
+    /*for the dragon*/
+    0% {
+        opacity: .05;
+    }
+    25% {
+        opacity: .0;
+    }
+    50% {
+        opacity: .20;
+    }
+    75% {
+        opacity: 0
+    }
+    100% {
+        opacity: .60
+    }
+}
+@keyframes egg{
+    /*flicker for egg
+    (minor changes to 05 and 100%)*/
+     0% {
+        opacity: .05;
+    }
+    25% {
+        opacity: .0;
+    }
+    50% {
+        opacity: .20;
+    }
+    75% {
+        opacity: 0
+    }
+    100% {
+        opacity: .50
+    }
 }
